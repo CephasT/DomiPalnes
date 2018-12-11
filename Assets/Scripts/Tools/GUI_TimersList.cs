@@ -1,0 +1,1 @@
+﻿using UnityEngine;using System.Collections.Generic;public class GUI_TimersList : MonoBehaviour{    public List<Timer> Timers = new List<Timer>();    protected virtual void Start()    {        GameCore.GetSystem<TimersManager>().AddTimers(this, Timers);    }}
